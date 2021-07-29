@@ -1,0 +1,107 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/110d331e/img/favicon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- -----------------Header Starts-------------------- -->
+    <header class="header">
+      <div class="left-header">
+        <i class="material-icons">menu</i>
+        <img src="images/download.png" alt="" />
+      </div>
+      <div class="search-header">
+        <form action="" onsubmit="findVideoes()">
+          <input type="text" placeholder="Search" id="search" />
+          <button><i class="material-icons">search</i></button>
+        </form>
+        <button
+          ><i
+            style="background-color: rgb(255, 255, 255)"
+            class="material-icons"
+            >mic</i
+          ></button
+        >
+      </div>
+      <div class="right-header">
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons">account_circle</i>
+      </div>
+    </header>
+    <!-- -----------------Header Ends-------------------- -->
+
+    <div class="container">
+      <!-- -----------Sidebar Starts------------ -->
+      <div class="sidebar">
+        <div class="sidebar_category">
+          <div class="sidebarInner">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </div>
+          <div class="sidebarInner">
+            <i class="material-icons">local_fire_department</i>
+            <span>Trending</span>
+          </div>
+          <div class="sidebarInner">
+            <i class="material-icons">subscriptions</i>
+            <span>Subscriptions</span>
+          </div>
+        </div>
+        <div class="sidebar_category">
+          <div class="sidebarInner">
+            <i class="material-icons">library_add_check</i>
+            <span>Library</span>
+          </div>
+          <div class="sidebarInner">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </div>
+          <div class="sidebarInner">
+            <i class="material-icons">play_arrow</i>
+            <span>Yor Videos</span>
+          </div>
+          <div class="sidebarInner">
+            <i class="material-icons">watch_later</i>
+            <span>Watch Later</span>
+          </div>
+          <div class="sidebarInner">
+            <i class="material-icons">thumb_up</i>
+            <span>Liked Videoes</span>
+          </div>
+        </div>
+      </div>
+      <!-- -----------Sidebar Ends------------ -->
+      <div class="mainVideoes" id="mainVideoes">
+        <!-- ------------------Category Selector Starts--------------------- -->
+        <div class="categorySelector">
+          <div class="choice_category">
+            <button class="selection">All</button>
+            <button class="selection">Masai School</button>
+            <button class="selection">Website</button>
+            <button class="selection">Science</button>
+            <button class="selection">Live</button>
+            <button class="selection">Battlegrounds Mobile India</button>
+            <button class="selection">Jethalal Champaklal Gada</button>
+            <button class="selection">Bitcoin</button>
+            <button class="selection">PUBG MOBILE</button>
+            <button class="selection">Android</button>
+            <button class="selection">Mixes</button>
+            <button class="selection">Music</button>
+          </div>
+        </div>
+        <!-- ------------------Category Selector Ends--------------------- -->
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>

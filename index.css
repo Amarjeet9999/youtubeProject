@@ -25,6 +25,7 @@ body {
   height: 60px;
   padding: 15px;
   box-shadow: 0px 0px 0px 3px rgba(195, 188, 188, 0.2);
+
 }
 
 .left-header {
@@ -35,23 +36,25 @@ body {
   padding: 0px 7px;
   cursor: pointer;
 }
-.left-header img {
-  width: 120px;
-  margin-left: 15px;
+.left-header svg {
+  width: 110px !important;
+  margin-left: 18px;
+  cursor: pointer;
 }
 .search-header {
   display: flex;
   align-items: center;
 }
-.search-header form {
+.search-header .form {
   border: 1px solid rgb(199, 198, 198);
   height: 35px;
   margin: 0;
   padding: 0;
   display: flex;
+  margin-left: 10%;
 }
 .search-header input {
-  width: 700px;
+  width: 500px;
   padding: 10px;
   margin: 0;
   border-radius: 0;
@@ -88,6 +91,7 @@ body {
   width: 18%;
   height: 100%;
   overflow: hidden;
+ 
 }
 .sidebar_category {
   width: 100%;
@@ -95,7 +99,7 @@ body {
   flex-direction: column;
   margin-bottom: 15px;
   margin-top: 15px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(197, 197, 197);
 }
 
 .sidebarInner {
@@ -103,8 +107,11 @@ body {
   padding: 12px 25px;
   align-items: center;
 }
+.sidebarInner1 {
+  background-color: #e7e4e4;
+}
 .sidebar_category :hover {
-  background: #e5e5e5;
+  background: #f1f1f1;
   cursor: pointer;
 }
 .sidebarInner span {
@@ -118,14 +125,15 @@ body {
   flex-wrap: wrap;
   margin: auto;
   background-color: rgb(249, 249, 249);
-  border-top: 1px solid #999;
   margin-top: 0;
+  margin-bottom: 5%;
 }
 
 .categorySelector {
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  width: 100%;
+  border-top: 1px solid rgb(223, 222, 222);
+  border-bottom: 1px solid rgb(223, 222, 222) !important;
+  width: 100vw;
+  height: 70px;
 }
 
 .choice_category {
@@ -139,7 +147,7 @@ body {
   width: 0;
 }
 .choice_category :first-child {
-  background-color: rgb(67, 67, 67);
+  background-color: rgb(90, 90, 90);
   color: white;
 }
 .selection {
@@ -156,5 +164,10 @@ body {
   height: 35px;
 }
 .selection:hover {
-  background-color: #b4b2b2;
+  background-color: #e6e2e2;
+}
+
+#videoesYoutube {
+  display: flex;
+  flex-wrap: wrap;
 }
